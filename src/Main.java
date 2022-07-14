@@ -36,8 +36,9 @@ public class Main {
         System.out.println("Вес будет скидываться " + drop250 + " дней при похудении 250 грамм в день");
     int drop500 = dropWeight / day500;
         System.out.println("Вес будет скидываться " + drop500 + " дней при похудении 500 грамм в день");
-    int arithmeticMean  = (drop250 + drop500)/2;
+    float arithmeticMean  = ((drop250 + drop500) / 2) - (((drop250 + drop500) / 2) % 1);
         System.out.println("Среднее арифметическое дней равно " + arithmeticMean);
+
 
     //Задание 5
     int Masha = 67_760;
